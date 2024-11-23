@@ -1,0 +1,118 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #74b9ff, #a29bfe);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.form-container {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    max-width: 600px;
+    width: 90%;
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #74b9ff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(116, 185, 255, 0.4);
+}
+
+button {
+    background: linear-gradient(135deg, #6c5ce7, #74b9ff);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    color: #333;
+}
+
+th {
+    background: #6c5ce7;
+    color: white;
+    font-size: 16px;
+}
+
+tr:nth-child(even) {
+    background: #f7f7f7;
+}
+
+tr:hover {
+    background: #74b9ff;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    input, select, textarea {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    table, th, td {
+        font-size: 12px;
+    }
+}
