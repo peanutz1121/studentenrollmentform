@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Enrollment Form</title>
+    <link rel="stylesheet" href="style.css"> <!-- External CSS file -->
+</head>
+<body>
+    <h1>Student Enrollment Form</h1>
+
+    <h3>Instructions:</h3>
+    <ol>
+        <li>Fill in the form fields.</li>
+        <li>Check your interests.</li>
+        <li>Click "Enroll Now" to submit.</li>
+    </ol>
+
+    <form action="/submit" method="POST">
+        <div class="form-container">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" maxlength="50" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" min="1" max="99" required>
+
+            <label for="sex">Sex:</label>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="sex" value="Male" required>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="sex" value="Female" required>
+
+            <label for="course">Course Option</label>
+            <select id="course" name="course" required>
+                <option value="" disabled selected>Please select a course</option>
+                <option value="BTVTED">Bachelor of Technical Vocational Teachers Education (BTVTED)</option>
+                <option value="ABELS">Bachelor of Arts in English Language Studies (ABELS)</option>
+                <option value="BSSW">Bachelor of Science in Social Work (BSSW)</option>
+                <option value="BSA">Bachelor of Science in Accountancy (BSA)</option>
+                <option value="BSAIS">Bachelor of Science in Accounting Information Systems (BSAIS)</option>
+                <option value="BSE">Bachelor of Science in Entrepreneurship (BSE)</option>
+                <option value="BSIT">Bachelor of Science in Information Technology (BSIT)</option>
+                <option value="BSPA">Bachelor of Science in Public Administration (BSPA)</option>
+                <option value="DHRM">Diploma in Hotel and Restaurant Management (DHRM)</option>
+            </select>
+
+            <label>Interests:</label>
+            <label for="web-dev">Web Development</label>
+            <input type="checkbox" id="web-dev" name="interests" value="Web Development">
+            <label for="data-science">Data Science</label>
+            <input type="checkbox" id="web-dev" name="interests" value="Web Development">
+            <label for="networking">Networking</label>
+            <input type="checkbox" id="networking" name="interests" value="Networking">
+            <label for="graphic-design">Graphic Design</label>
+            <input type="checkbox" id="graphic-design" name="interests" value="Graphic Design">
+            <label for="cooking">Cooking</label>
+            <input type="checkbox" id="cooking" name="interests" value="Cooking">
+
+            <button type="submit">Enroll Now!</button>
+        </div>
+    </form>
+
+    <h2>List of Students Enrolled</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Sex</th>
+                <th>Course</th>
+                <th>Interests</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>023A-10594</td>
+                <td>Alabado, Roderick L.</td>
+                <td>roderickalabado121@gmail.com</td>
+                <td>20</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Web Developing</td>
+            </tr>
+            <tr>
+                <td>023A-10595</td>
+                <td>Patrick Lagaya</td>
+                <td>patricklagaya121@gmail.com</td>
+                <td>20</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Data Science</td>
+            <tr>
+                <td>023A-10596</td>
+                <td>Harry Amante</td>
+                <td>harryamante121@gmail.com</td>
+                <td>20</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Networking</td>
+            </tr>
+            <tr>
+                <td>023A-10597</td>
+                <td>Joshua Denado</td>
+                <td>joshuadenado121@gmail.com</td>
+                <td>20</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Graphic Design</td>
+            </tr>
+            <tr>
+                <td>023A-10598</td>
+                <td>John Oliver Liwanag</td>
+                <td>johnoliverliwanag121@gmail.com</td>
+                <td>19</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Cooking</td>
+            <tr>
+                <td>023A-10599</td>
+                <td>Jonas Aranilla</td>
+                <td>jonasaranilla@gmail.com</td>
+                <td>23</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Cooking</td>
+            </tr>
+            <tr>
+                <td>023A-10600</td>
+                <td>Brian Encina</td>
+                <td>brianencina@gmail.com</td>
+                <td>20</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Graphic Design</td>
+            </tr>
+            <tr>
+                <td>023A-10601</td>
+                <td>Charles Berches</td>
+                <td>charlesberches@gmail.com</td>
+                <td>20</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Net Working</td>
+            </tr>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
